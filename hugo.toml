@@ -1,0 +1,30 @@
+baseURL = "https://csshah.com/"
+locale = "en-us"
+title = "Swapnil Shah"
+theme = "hugo-xmin"
+
+[permalinks]
+  post = "/post/:year/:month/:day/:slug/"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+[[menu.main]]
+  name = "Subscribe"
+  url = "/index.xml"
+  weight = 3
+
+[params]
+  description = "Swapnil Shah's personal site"
+  footer = "&copy; Swapnil Shah {Year} &middot; [GitHub](https://github.com/SwapnilShahGit) &middot; [RSS](/index.xml)"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    codeFences = false
